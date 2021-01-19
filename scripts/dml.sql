@@ -18,7 +18,7 @@ values
   (3, 3, 70000, '3rd street', 'Apt 13', 'Baltimore', 'Maryland', 'USA');
 
 insert into Department
-  (ID, [Name], [Location])
+  (ID, [Name], [Locatation])
 values
   (1, 'HR', 'USA')
 ,
@@ -50,7 +50,7 @@ FROM Employee
 GROUP BY DeptID;
 
 UPDATE Employee
-set e.Salary = 90000
+set ed.Salary = 90000
 from Employee as e 
     inner join EmpDetails as ed on ed.EmployeeID = e.ID
-where e.FirstName = "Tina" AND e.LastName = "Smith";
+where e.FirstName = 'Tina' AND e.LastName = 'Smith';

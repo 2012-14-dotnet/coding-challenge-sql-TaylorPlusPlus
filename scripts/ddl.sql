@@ -23,17 +23,17 @@ CREATE TABLE Department
 (
     ID int NOT NULL,
     [Name] VARCHAR(50),
-    [Locatation] VARCHAR(100)
+    [Location] VARCHAR(100)
 );
 
 ALTER TABLE Employee
-    add CONSTRAINT PK_ID primary key CLUSTERED(ID)
+    add CONSTRAINT PK_EmpId primary key CLUSTERED(ID)
 GO
 ALTER TABLE EmpDetails
-    add CONSTRAINT PK_ID primary key CLUSTERED(ID)
+    add CONSTRAINT PK_DetailID primary key CLUSTERED(ID)
 GO
 ALTER TABLE Department
-    add CONSTRAINT PK_ID primary key CLUSTERED(ID)
+    add CONSTRAINT PK_DepID primary key CLUSTERED(ID)
 GO
 
 ALTER TABLE EmpDetails
