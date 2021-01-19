@@ -15,7 +15,7 @@ CREATE TABLE EmpDetails
     Address1 varchar(100),
     Address2 varchar(100),
     City varchar(50),
-    State varchar(20),
+    [State] varchar(20),
     Country varchar(30)    
 );
 
@@ -23,7 +23,7 @@ CREATE TABLE Department
 (
     ID int NOT NULL,
     [Name] VARCHAR(50),
-    Locatation VARCHAR(100)
+    [Locatation] VARCHAR(100)
 );
 
 ALTER TABLE Employee
